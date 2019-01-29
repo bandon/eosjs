@@ -521,6 +521,10 @@ function WriteApi(Network, network, config, Transaction) {
         }
       }
 
+      tr.transaction_extensions = {
+        'datas': []
+      }
+              
       const packedTr = {
         compression: 'none',
         transaction: tr,
